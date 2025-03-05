@@ -1,13 +1,17 @@
 Es el estudio de máquinas abstractas
 
->[!NOTE] Alfabeto $\Sigma$
+>[!NOTE] 
+> **Alfabeto $\Sigma$**
 > - Conjunto no vacio finito de simbolos
 > 
-> > [!example] Alfabeto binario $\Sigma=\{0,1\}$
+> > [!example] 
+> > **Alfabeto binario** $\Sigma=\{0,1\}$
 > 
-> > [!example] Alfabeto de letras minusculas $\Sigma=\{a,b,...,z\}$
+> > [!example] 
+> > **Alfabeto de letras minusculas** $\Sigma=\{a,b,...,z\}$
 > 
-> > [!NOTE] Cadena $\omega$
+> > [!NOTE] 
+> > Cadena $\omega$
 > > Secuencia finita de símbolos seleccionados de algún alfabeto.
 > > - **Longitud de una cadena** $|\omega|$: cantidad de símbolos
 > > - **Cadena vacia**: $\lambda$
