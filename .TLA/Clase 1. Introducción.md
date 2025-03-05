@@ -4,8 +4,8 @@ Es el estudio de máquinas abstractas
 > **Alfabeto $\Sigma$**
 > - Conjunto no vacio finito de simbolos
 > 
-> > [!TIP] 
-> > **Alfabeto binario** $\Sigma=\{0,1\}$
+> [!TIP] 
+> **Alfabeto binario** $\Sigma=\{0,1\}$
 > 
 > > [!TIP] 
 > > **Alfabeto de letras minusculas** $\Sigma=\{a,b,...,z\}$
