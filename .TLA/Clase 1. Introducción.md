@@ -68,7 +68,8 @@ $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demo
 > - $P$ = conjunto de producciones $\alpha\rightarrow\beta$ donde $\alpha\in (N\cup\Sigma)^+\wedge\beta\in (N\cup\Sigma)^*$ 
 > 
 
-> [!NOTE] Clasificación de gramáticas según Chomsky
+> [!NOTE] 
+> Clasificación de gramáticas según Chomsky
 > > [!NOTE] Tipo 0: Irrestrictas
 > > Producciones $\alpha\rightarrow\beta$ donde $\alpha\in(N\cup\Sigma)^+\wedge\beta\in(N]cup\Sigma)^*$
 > 
