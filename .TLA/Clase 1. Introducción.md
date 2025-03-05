@@ -4,10 +4,10 @@ Es el estudio de máquinas abstractas
 > **Alfabeto $\Sigma$**
 > - Conjunto no vacio finito de simbolos
 > 
-> > [!example] 
+> > [!TIP] 
 > > **Alfabeto binario** $\Sigma=\{0,1\}$
 > 
-> > [!example] 
+> > [!TIP] 
 > > **Alfabeto de letras minusculas** $\Sigma=\{a,b,...,z\}$
 > 
 > > [!NOTE] 
@@ -28,14 +28,14 @@ Es el estudio de máquinas abstractas
 >- $\lambda$ es una cadena
 >- Si a es un simbolo $(a\in\Sigma)$ y $\omega$ es una cadena, entonces $a.\omega$ es una cadena
 
-> [!example] Reversion de una cadena
+> [!TIP] Reversion de una cadena
 > Definicion recursiva:
 > - $\lambda^r = \lambda$
 > - $(a\omega)^r=(\omega)^ra$
 
 > [!NOTE] Lenguaje $L$
 > Dado un $\Sigma$, un lenguaje $L$ es un subconjunto de $\Sigma^*$ tal que $L\subseteq\Sigma^*$
-> >[!example] 
+> >[!TIP] 
 > >
 > 
 > > [!tldr] Operaciones
@@ -56,7 +56,7 @@ recursiva determinada.
 > 2. Para el paso de inducción se toma una estructura $X$ que está formada a partir de  
 $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demostrar $P(X)$
 >
-> >[!example] Arbol
+> >[!TIP] Arbol
 > >**Base:** Un nodo es un arbol
 > >**Paso inductivo**: Si $T_1. T_2, ..., T_k$ son árboles, se puede construir un nuevo árbol de la siguiente manera
 > >3. Se comienza con un nuevo nodo $(N)$, que es la raíz del arbol
