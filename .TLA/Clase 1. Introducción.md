@@ -1,27 +1,29 @@
->[!NOTE] Definición 
+>[!NOTE] 
 > ### Alfabeto $\Sigma$
 >  
 > Conjunto no vacio finito de simbolos
 
-> [!IMPORTANT] EJ | Alfabeto binario
+> [!IMPORTANT] 
+> #### EJ | Alfabeto binario
 > $\Sigma=\{0,1\}$
 
-> [!IMPORTANT] EJ | Alfabeto de letras minusculas
+> [!IMPORTANT] 
+> #### EJ | Alfabeto de letras minusculas
 > $\Sigma=\{a,b,...,z\}$
 
-> [!TIP] Operación 
+> [!TIP]  
 > ### Potencias de un Alfabeto $\Sigma^𝑘$
 > 
 > Es el conjunto de cadenas de una determinada longitud sobre el alfabeto tal que $\forall\omega\in\Sigma: |\omega|=k$
 ---
-> [!NOTE] Definición 
+> [!NOTE] 
 > ### Cadena $\omega$
 > 
 > Secuencia finita de símbolos seleccionados de algún alfabeto.
 > - **Longitud de una cadena** $|\omega|$: cantidad de símbolos
 > - **Cadena vacia**: $\lambda$
  
-> [!TIP] Operación
+> [!TIP]
 > ### Concatenacion de cadenas $x.y$
 >
 > #### Propiedades
@@ -29,28 +31,28 @@
 > - **Asociativa**: $\forall x,y,z: (x.y).z=x.(y.z)$
 > - **Elemento neutro**: la palabra vacía $\lambda$
 
-> [!NOTE] Definición 
+> [!NOTE] 
 > ### Cadena: Definicion recursiva 
 > - $\lambda$ es una cadena
 > - Si a es un simbolo $(a\in\Sigma)$ y $\omega$ es una cadena, entonces $a.\omega$ es una cadena
 
-> [!TIP] Operación
+> [!TIP]
 > ### Reversion de una cadena
 > Definicion recursiva:
 > - $\lambda^r = \lambda$
 > - $(a\omega)^r=(\omega)^ra$
 ---
-> [!NOTE] Definición 
+> [!NOTE] 
 > ### Lenguaje $L$
 > 
 > Dado un $\Sigma$, un lenguaje $L$ es un subconjunto de $\Sigma^*$ tal que $L\subseteq\Sigma^*$
 
-> [!TIP] Operaciones
+> [!TIP] 
 > - **Union**: $L_1\cup L_2$
 > - **Clausura**: $L_1^* = \{\lambda,ab,ac,ad,abab,abac,abad,acab,...\}$
 > - **Reversa**: $L_1^r = \{ba,ca,da\}$
 
-> [!NOTE] Definición 
+> [!NOTE]  
 > ### Inducción Estructural
 > 
 > **Las definiciones recursivas tienen:**  
@@ -66,7 +68,8 @@ recursiva determinada.
 > 2. Para el paso de inducción se toma una estructura $X$ que está formada a partir de  
 $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demostrar $P(X)$
 
-> [!IMPORTANT] EJ | Arbol
+> [!IMPORTANT] 
+> #### EJ | Arbol
 > **Base:** Un nodo es un arbol
 > 
 > **Paso inductivo**: Si $T_1. T_2, ..., T_k$ son árboles, se puede construir un nuevo árbol de la siguiente manera
@@ -86,19 +89,19 @@ $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demo
 > - $P$ = conjunto de producciones $\alpha\rightarrow\beta$ donde $\alpha\in (N\cup\Sigma)^+\wedge\beta\in (N\cup\Sigma)^*$ 
 
 ---
-> [!NOTE] Definición 
+> [!NOTE] 
 > ### Clasificación de gramáticas según Chomsky
-
-> [!CAUTION] Tipo 0: Irrestrictas
+>
+> #### Tipo 0: Irrestrictas
 > Producciones $\alpha\rightarrow\beta$ donde $\alpha\in(N\cup\Sigma)^+\wedge\beta\in(N]cup\Sigma)^*$
-
-> [!CAUTION] Tipo 1: Sensibles al contexto
+>
+> #### Tipo 1: Sensibles al contexto
 > Producciones $\alpha\rightarrow\beta$ donde $|a|\ge|\beta|\ (\text{salvo } S\rightarrow\lambda)$
- 
-> [!CAUTION] Tipo 2: Libres de contexto
+>
+> #### Tipo 2: Libres de contexto
 > Producciones $A\rightarrow\beta$ donde $A\in N$
- 
-> [!CAUTION] Tipo 3: Regulares
+>
+> #### Tipo 3: Regulares
 > Producciones de alguna de las siguientes formas
 > $$\begin{cases}A\rightarrow bC\\ A\rightarrow b\\ A\rightarrow\lambda\end{cases}\qquad \begin{cases}A\rightarrow Cb\\ A\rightarrow b\\ A\rightarrow \lambda\end{cases}$$
 
