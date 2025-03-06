@@ -49,7 +49,8 @@
 > [!NOTE] 
 > ### Lenguaje $L$
 > 
-> Dado un $\Sigma$, un lenguaje $L$ es un subconjunto de $(\Sigma)^*$ tal que $`L\subseteq(\Sigma)^*$
+> Dado un $\Sigma$, un lenguaje $L$ es un subconjunto de $\Sigma^*$ tal que 
+> $L\subseteq\Sigma^*$
 
 > [!IMPORTANT]
 > #### EJ | Si $\Sigma=\lbrace a,b,c\rbrace$
