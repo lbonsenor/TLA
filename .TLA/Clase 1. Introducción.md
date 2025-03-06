@@ -5,11 +5,11 @@
 
 > [!IMPORTANT] 
 > #### EJ | Alfabeto binario
-> $\Sigma=\{0,1\}$
+> $\Sigma=\lbrace 0,1\rbrace$
 
 > [!IMPORTANT] 
 > #### EJ | Alfabeto de letras minusculas
-> $\Sigma=\{a,b,\ldots,z\}$
+> $\Sigma=\lbrace a,b,\ldots,z\rbrace$
 
 > [!TIP]  
 > ### Potencias de un Alfabeto $\Sigma^𝑘$
@@ -52,15 +52,15 @@
 > Dado un $\Sigma$, un lenguaje $L$ es un subconjunto de $\Sigma^*$ tal que $L\subseteq\Sigma^*$
 
 > [!IMPORTANT]
-> #### EJ | Si $\Sigma=\{a,b,c\}$
-> $L = \{\omega\in\Sigma^*|\#_a(\omega)=\#_b(\omega)$
-> $L = \{abc,cab,ccccab,abcba,\ldots\}$
+> #### EJ | Si $\Sigma=\lbrace a,b,c\rbrace$
+> $L = \lbrace \omega\in\Sigma^*|\#_a(\omega)=\#_b(\omega)$
+> $L = \lbrace abc,cab,ccccab,abcba,\ldots\rbrace$
 
 > [!TIP] 
 > - **Union**: $L_1\cup L_2$
-> - **Clausura**: $L_1^* = \{\lambda,ab,ac,ad,abab,abac,abad,acab,\ldots\}$
-> - **Reversa**: $L_1^r = \{ba,ca,da\}$
-> - **Producto**: $L_1\cdot L_2 = \{w\ |\ w=xy, x\in L_1\wedge y\in L_2\}$
+> - **Clausura**: $L_1^* = \lbrace \lambda,ab,ac,ad,abab,abac,abad,acab,\ldots\rbrace$
+> - **Reversa**: $L_1^r = \lbrace ba,ca,da\rbrace$
+> - **Producto**: $L_1\cdot L_2 = \lbrace w\ |\ w=xy, x\in L_1\wedge y\in L_2\rbrace$
 > - **Potencia**: $L^i=L\cdot L\ldots\cdot L$ ($i$ veces)
 > - **Clausura**: $L^+=\bigcup^\infty_{i=1}L^i$
 > - **Clausura de Keene:**: $L^*=\bigcup^\infty_{i=0}L^i$
@@ -109,9 +109,9 @@ $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demo
 >
 > #### EJ | $G=\langle N,\Sigma,S,P\rangle$
 > $\begin{cases} 
-  V=\{S,A\}\\ 
-  \Sigma=\{a,b\}\\ 
-  P=\{S\rightarrow aAb, A\rightarrow aAb\ |\ a\}
+  V=\lbrace S,A\rbrace  \\ 
+  \Sigma=\lbrace a,b\rbrace  \\ 
+  P=\lbrace S\rightarrow aAb, A\rightarrow aAb\ |\ a\rbrace  
   \end{cases}$
 > 
 > Una secuencia de derivaciones **puede** ser $S\Rightarrow aAb\Rightarrow aaAbb\Rightarrow aaabb$
@@ -130,7 +130,7 @@ $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demo
 > [!NOTE]
 > ### Lenguaje de una Gramática
 >
-> $L(G)=\{\omega\in\Sigma^*\ |\ S\Rightarrow *\omega\}$
+> $L(G)=\lbrace \omega\in\Sigma^*\ |\ S\Rightarrow *\omega\rbrace$
 
 ---
 > [!NOTE] 
