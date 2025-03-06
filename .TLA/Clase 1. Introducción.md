@@ -14,7 +14,7 @@
 > [!TIP]  
 > ### Potencias de un Alfabeto $\Sigma^𝑘$
 > 
-> Es el conjunto de cadenas de una determinada longitud sobre el alfabeto tal que $\forall\omega\in\Sigma: |\omega|=k$
+> Es el conjunto de cadenas de una determinada longitud sobre el alfabeto tal que $`\forall\omega\in\Sigma: |\omega|=k`$
 
 ---
 
