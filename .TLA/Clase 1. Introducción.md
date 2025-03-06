@@ -14,7 +14,7 @@
 > [!TIP]  
 > ### Potencias de un Alfabeto $\Sigma^𝑘$
 > 
-> Es el conjunto de cadenas de una determinada longitud sobre el alfabeto tal que $`\forall\omega\in\Sigma: |\omega|=k`$
+> Es el conjunto de cadenas de una determinada longitud sobre el alfabeto tal que $\forall\omega\in\Sigma: |\omega|=k$
 
 ---
 
@@ -49,11 +49,12 @@
 > [!NOTE] 
 > ### Lenguaje $L$
 > 
-> Dado un $\Sigma$, un lenguaje $L$ es un subconjunto de $\Sigma^*$ tal que $L\subseteq\Sigma^*$
+> Dado un $\Sigma$, un lenguaje $L$ es un subconjunto de $`\Sigma^*`$ tal que $`L\subseteq\Sigma^*`$
 
 > [!IMPORTANT]
 > #### EJ | Si $\Sigma=\lbrace a,b,c\rbrace$
-> $L = \lbrace \omega\in\Sigma^*|\#_a(\omega)=\#_b(\omega)$
+> $`L = \lbrace \omega\in\Sigma^*|\#_a(\omega)=\#_b(\omega)`$
+> 
 > $L = \lbrace abc,cab,ccccab,abcba,\ldots\rbrace$
 
 > [!TIP] 
