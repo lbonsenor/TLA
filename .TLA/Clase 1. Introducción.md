@@ -9,7 +9,7 @@
 
 > [!IMPORTANT] 
 > #### EJ | Alfabeto de letras minusculas
-> $\Sigma=\{a,b,...,z\}$
+> $\Sigma=\{a,b,\ldots,z\}$
 
 > [!TIP]  
 > ### Potencias de un Alfabeto $\Sigma^𝑘$
@@ -51,12 +51,17 @@
 > 
 > Dado un $\Sigma$, un lenguaje $L$ es un subconjunto de $\Sigma^*$ tal que $L\subseteq\Sigma^*$
 
+> [!IMPORTANT]
+> #### EJ | Si $\Sigma=\{a,b,c\}$
+> $L = \{\omega\in\Sigma^*|\#_a(\omega)=\#_b(\omega)$
+> $L = \{abc,cab,ccccab,abcba,\ldots\}$
+
 > [!TIP] 
 > - **Union**: $L_1\cup L_2$
-> - **Clausura**: $L_1^* = \{\lambda,ab,ac,ad,abab,abac,abad,acab,...\}$
+> - **Clausura**: $L_1^* = \{\lambda,ab,ac,ad,abab,abac,abad,acab,\ldots\}$
 > - **Reversa**: $L_1^r = \{ba,ca,da\}$
 > - **Producto**: $L_1\cdot L_2 = \{w\ |\ w=xy, x\in L_1\wedge y\in L_2\}$
-> - **Potencia**: $L^i=L\cdot L...\cdot L$ ($i$ veces)
+> - **Potencia**: $L^i=L\cdot L\ldots\cdot L$ ($i$ veces)
 > - **Clausura**: $L^+=\bigcup^\infty_{i=1}L^i$
 > - **Clausura de Keene:**: $L^*=\bigcup^\infty_{i=0}L^i$
 
@@ -80,7 +85,7 @@ $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demo
 > 
 > **Base:** Un nodo es un arbol
 > 
-> **Paso inductivo**: Si $T_1. T_2, ..., T_k$ son árboles, se puede construir un nuevo árbol de la siguiente manera
+> **Paso inductivo**: Si $T_1. T_2, \ldots, T_k$ son árboles, se puede construir un nuevo árbol de la siguiente manera
 > 1. Se comienza con un nuevo nodo $(N)$, que es la raíz del arbol
 > 2. Se añaden arcos desde el nodo $N$ hasta las raíces de cada uno de los árboles
 > 
@@ -89,7 +94,7 @@ $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demo
 ---
 
 > [!NOTE] 
-> ### Definición Grámaticas $\langle N,\Sigma,S,P\rangle$ o $\langle V,\Sigma,S,P\rangle$
+> ### Grámaticas $\langle N,\Sigma,S,P\rangle$ o $\langle V,\Sigma,S,P\rangle$
 >  
 > Una **gramática** es un sistema matemático para definir un lenguaje
 > - $N$= conjunto de símbolos no terminales
@@ -100,19 +105,39 @@ $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demo
 ---
 
 > [!NOTE]
-> ### Formas Sentenciales
->  
-> **CB**: $S\text{ es una forma sentencial}$
+> ### Derivaciones
+>
+> #### EJ | $G=\langle N,\Sigma,S,P\rangle$
+> $\begin{cases} 
+  V=\{S,A\}\\ 
+  \Sigma=\{a,b\}\\ 
+  P=\{S\rightarrow aAb, A\rightarrow aAb\ |\ a\}
+  \end{cases}$
 > 
-> **P.I.**: $\text{Si } \alpha\beta\gamma\text{ es una }f.s\wedge\beta\rightarrow\delta\in P\Rightarrow\alpha\delta\gamma\text{ es una forma sentencial}$
- 
+> Una secuencia de derivaciones **puede** ser $S\Rightarrow aAb\Rightarrow aaAbb\Rightarrow aaabb$
+
 ---
 
+> [!NOTE]
+> ### Formas Sentenciales $(V\cup\Sigma)^*$
+>  
+> Dada una gramatica $G=\langle N,\Sigma,S,P\rangle$, las formas secuenciales son todas las secuencias de simbolos derivadas de $S$, usando las producciones de $G$
+>  
+> **Formas sentenciales que son palabras**: $\Sigma^*$
+
+---
+
+> [!NOTE]
+> ### Lenguaje de una Gramática
+>
+> $L(G)=\{\omega\in\Sigma^*\ |\ S\Rightarrow *\omega\}$
+
+---
 > [!NOTE] 
 > ### Clasificación de gramáticas según Chomsky
 >
 > #### Tipo 0: Irrestrictas
-> Producciones $\alpha\rightarrow\beta$ donde $\alpha\in(N\cup\Sigma)^+\wedge\beta\in(N]cup\Sigma)^*$
+> Producciones $\alpha\rightarrow\beta$ donde $\alpha\in(N\cup\Sigma)^+\wedge\beta\in(N\cup\Sigma)^*$
 >
 > #### Tipo 1: Sensibles al contexto
 > Producciones $\alpha\rightarrow\beta$ donde $|a|\ge|\beta|\ (\text{salvo } S\rightarrow\lambda)$
