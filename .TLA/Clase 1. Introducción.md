@@ -50,6 +50,7 @@
 > ### Lenguaje $L$
 > 
 > Dado un $\Sigma$, un lenguaje $L$ es un subconjunto de $\Sigma^*$ tal que 
+> 
 > $L\subseteq\Sigma^*$
 
 > [!IMPORTANT]
