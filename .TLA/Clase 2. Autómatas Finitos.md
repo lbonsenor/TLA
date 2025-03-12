@@ -50,7 +50,7 @@
 > $\text{Base)}$ Si $I$ es la configuración instantánea, $I\mapsto *I$
 >
 > $\text{P.I.)}$ $I\mapsto *J$ es una secuencia válida si existe alguna configuración $K$ tal que
-> 
+>
 > $$I\mapsto K\wedge K\mapsto *J$$
 
 > [!NOTE]
@@ -89,5 +89,7 @@
 >
 > ### Estados Accesibles
 >
-> - Un estado $q_i\in Q$ es accesible si: $\exists\alpha\in\Sigma^*\bigg|\hat\delta(q_0,\alpha)=q_i\in Q$
-> - Un estado $q_i\in Q$ es accesible si: $\exists\alpha\in\Sigma^*\bigg|[q_0,\alpha]\rightarrow[q_i,\lambda]$
+> Un estado $q_i\in Q$ es accesible si: 
+> 
+> - $\exists\alpha\in\Sigma^*\bigg|\hat\delta(q_0,\alpha)=q_i\in Q$
+> - $\exists\alpha\in\Sigma^*\bigg|[q_0,\alpha]\rightarrow[q_i,\lambda]$
