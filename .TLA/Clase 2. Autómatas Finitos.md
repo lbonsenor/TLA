@@ -190,6 +190,5 @@ F'=\lbrace s\in Q'\wedge S\cap F\ne\oslash\\
 \delta'(s_i,a)=s_j\Leftrightarrow\exists p\in s_i\wedge\exists q\in s_j\bigg|\delta(p,a)=q
 \end{cases}$$
 >
-> #### Teorema
->
-> El autómata $A’$ obtenido es equivalente al autómata A y es mínimo (el número de estados de $A’$ es menor o igual que el de cualquier otro AFD equivalente a $A$)
+> > **Teorema:**
+> > El autómata $A'$ obtenido es equivalente al autómata $A$ y es **mínimo** (el número de estados de $A'$ es menor o igual que el de cualquier otro AFD equivalente a $A$)
