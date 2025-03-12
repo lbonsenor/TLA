@@ -91,5 +91,6 @@
 >
 > Un estado $q_i\in Q$ es accesible si:
 >
-> $$\exists\alpha\in\Sigma^*\bigg|\hat{\delta}(q_0,\alpha)=q_i\in Q\\\\\exists\alpha\in\Sigma^*\bigg|[q_0,\alpha]\rightarrow[q_i,\lambda]$$
+> $$\exists\alpha\in\Sigma^*\bigg|\hat{\delta}(q_0,\alpha)=q_i\in Q\\$$
 >
+> $$\exists\alpha\in\Sigma^*\bigg|[q_0,\alpha]\rightarrow[q_i,\lambda]$$
