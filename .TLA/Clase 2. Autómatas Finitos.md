@@ -67,7 +67,7 @@
 
 > [!TIP]
 >
-> ### Equivalencia de autómatas
+> ### Equivalencia de autómatas $M\equiv M'$
 >
 > Sean dos **AFD** $M$ y $M'$
 >
@@ -85,6 +85,8 @@
 > 1. Eliminar estados inaccesibles desde $q_0$
 > 2. Construir el conjunto de clases de equivalencia de estados
 
+---
+
 > [!NOTE]
 >
 > ### Estados Accesibles
@@ -94,3 +96,100 @@
 > $$\exists\alpha\in\Sigma^*\bigg|\hat{\delta}(q_0,\alpha)=q_i\in Q$$
 >
 > $$\exists\alpha\in\Sigma^*\bigg|[q_0,\alpha]\rightarrow[q_i,\lambda]$$
+
+> [!TIP]
+>
+> ### Construcción Inductiva
+>
+> $\text{Base)}$ El conjunto de un solo momento $Q'=\lbrace q_0\rbrace$ es accecible ya que
+>
+> $$\exists\lambda\in\Sigma^*\bigg|\hat\delta(q_0,\lambda)=q_0\in Q$$
+>
+> $\text{P.I)}$ Si $S\subseteq Q$ es un conjunto de estados accesibles $\forall a\in\Sigma\wedge q_i\in S$, $S'$ es de estados accesibles tal que
+>
+> $$S'=\bigg\lbrace q_j\in Q\bigg|\delta(q_i,a)=q_j\bigg\rbrace$$
+
+> [!NOTE]
+>
+> ### Estados equivalentes o Indistinguibles
+>
+> Los estados $p$ y $q$ son **indistinguibles** si
+>
+> $$\forall\omega\in\Sigma^*:\hat\delta(p,\omega)\in F\Leftrightarrow\hat\delta(q,\omega)\in F$$
+>
+> Los estados $p$ y $q$ son **distinguibles** si
+>
+> $$\exists\omega\in\Sigma^*:\hat\delta(p,\omega)\in F\wedge\hat\delta(q,\omega)\notin F\text\qquad\text{o viceversa}$$
+>
+> > **Propiedad:** La relación de **indistiguibilidad** es de una relación de **equivalencia**
+
+> [!TIP]
+>
+> ### Indistiguibilidad de orden $k$ $E_k$
+>
+> Considera palabras de una misma longitud $k$
+>
+> - La **indistiguibilidad** de orden $k$ $E_k$ es una relacion de equivalencia
+> - Determina una partición del conjunto $Q$ en clases de equivalencia
+>
+> ---
+>
+> #### $\text{Lema 1:}$ Dado un autómata, se cumple que $\frac Q {E_0}=\lbrace F, Q-F\rbrace$
+>
+> $$pE_0q:\quad\forall\omega\in\Sigma^*\wedge|\omega|=0:\hat\delta(p,\lambda)\in F\Leftrightarrow(q,\lambda)\in F$$
+>
+> $$\text{Por definicion de }\hat\delta:\hat\delta(p,\lambda)=p\wedge\hat\delta(q,\lambda)=q$$
+>
+> $$\text{Por lo tanto:}\qquad pE_0q\Leftrightarrow\bigg(p\in F\Leftrightarrow q\in F\bigg)$$
+>
+> ---
+>
+> #### $\text{Lema 2:}$ Dado un autómata y dos estados $p$ y $q$
+>
+> $$pE_{n+1}q\Leftrightarrow\forall a\in \Sigma:\delta(p,a)E_n\delta(q,a)$$
+>
+> Si $\forall a\in\Sigma:\delta(p,a)E_n\delta(q,a)$, eso significa que:
+>
+> $$\forall\omega\in\Sigma^*\wedge|\omega|=n:\hat\delta(r,\omega)\in F\Leftrightarrow\hat\delta(s,\omega)\in F\text{, siendo }\delta(p,a)=r\wedge\delta(q,a)=s$$
+>
+> $$\text{Por lo tanto:}\quad\forall\omega'\in\Sigma^*\wedge\omega'=a\omega,|\omega´|=n+1:\hat\delta(p,\omega')\in F\Leftrightarrow(q,\omega')\in F$$
+
+---
+
+> [!TIP]
+>
+> ### Construcción del conjunto cociente $\frac QE$
+>
+> `Entrada:` $Q$
+>
+> `Salida:` Conjunto cociente de $Q$ por la relacion de indistiguibilidad $\frac QE$
+>
+> 1. $\frac Q{E_0}=\lbrace F, Q-F\rbrace$
+> 2. Generar $\frac Q{E_{i+1}}$ a partir de $\frac Q{E_i}$ de la siguiente manera:
+>       - Los estados $p$ y $q$ pertenecen a la misma clase en $\frac{Q}{E_{i+1}}\Leftrightarrow$
+>           - $p$ y $q$ pertenecen a la misma clase en $\frac Q{E_i}$ y
+>           - $\forall a\in\Sigma:\delta(p,a),\delta(q,a)$ pertenecen a la misma clase en $\frac Q{E_i}$
+> 3. Si $\frac Q{E_{i+1}}=\frac Q{E_i}$, entonces $\frac Q{E_{i+1}}=\frac Q{E}$. Sino, volver al paso `2`
+
+> [!TIP]
+>
+> ### Minimización de AFD 2
+>
+> `Entrada`: $A=\langle Q,\Sigma,\delta,q_0,F\rangle$
+>
+> `Salida`: $A'=\langle Q',\Sigma,\delta',q_0',F'\rangle$ equivalente a $A$ con mínima cantidad de estados
+>
+> 1. Eliminar estados accesibles desde $q_0$
+> 2. Construir el conjunto cociente $\frac QE$
+> 3. $A'=\langle Q',\Sigma,\delta',q_0',F'\rangle$ donde:
+>
+> $$\begin{cases}
+Q'=\frac QE\\
+q'_0\text{ es el elemento de }Q'\text{ tal que }q_0\in q'_0\\
+F'=\lbrace s\in Q'\wedge S\cap F\ne\oslash\\
+\delta'(s_i,a)=s_j\Leftrightarrow\exists p\in s_i\wedge\exists q\in s_j\bigg|\delta(p,a)=q
+\end{cases}$$
+>
+> #### Teorema
+>
+> El autómata $A’$ obtenido es equivalente al autómata A y es mínimo (el número de estados de $A’$ es menor o igual que el de cualquier otro AFD equivalente a $A$)
