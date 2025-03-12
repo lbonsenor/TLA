@@ -25,9 +25,9 @@
 >
 > ### Definición sobre la longitud de la cadena de entrada
 >
-> $\text{Base)}\quad\hat\delta(q,\lambda)=q$
+> $$\text{Base)}\quad\hat\delta(q,\lambda)=q$$
 >
-> $\text{P.I.)}\quad\text{Si }\omega=\omega'a\quad\Rightarrow\hat\delta(q,\omega)=\delta\bigg(\hat\delta(q,\omega'),a\bigg)$
+> $$\text{P.I.)}\quad\text{Si }\omega=\omega'a\quad\Rightarrow\hat\delta(q,\omega)=\delta\bigg(\hat\delta(q,\omega'),a\bigg)$$
 
 ---
 
@@ -49,7 +49,9 @@
 >
 > $\text{Base)}$ Si $I$ es la configuración instantánea, $I\mapsto *I$
 >
-> $\text{P.I.)}$ $I\mapsto *J$ es una secuencia válida si existe alguna configuración $K$ tal que $I\mapsto K\wedge K\mapsto *J$
+> $\text{P.I.)}$ $I\mapsto *J$ es una secuencia válida si existe alguna configuración $K$ tal que
+> 
+> $$I\mapsto K\wedge K\mapsto *J$$
 
 > [!NOTE]
 >
