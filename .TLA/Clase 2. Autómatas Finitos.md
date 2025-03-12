@@ -15,11 +15,11 @@
 >
 > #### Función de Transición $\delta$
 >
-> Se define de $\delta:Q\times\Sigma\rightarrow Q$
+> $$\delta: Q\times\Sigma\rightarrow Q$$
 >
 > #### Función de Transición Extendida $\hat\delta$
 >
-> Se define de $\hat\delta: Q\times\Sigma^*\rightarrow Q$
+> $$\hat\delta: Q\times\Sigma^* \rightarrow Q$$
 
 > [!TIP]
 >
