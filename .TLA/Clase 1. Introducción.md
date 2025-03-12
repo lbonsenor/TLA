@@ -181,6 +181,10 @@ $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demo
 > #### Tipo 3: Regulares
 >
 > Producciones de alguna de las siguientes formas
-> $`\begin{cases}A\rightarrow bC\\ A\rightarrow b\\ A\rightarrow\lambda\end{cases}\qquad\vee\qquad \begin{cases}A\rightarrow Cb\\ A\rightarrow b\\ A\rightarrow \lambda\end{cases}`$
+> $$\begin{cases}A\rightarrow bC\\
+A\rightarrow b\\
+A\rightarrow\lambda\end{cases}\qquad\vee\qquad \begin{cases}A\rightarrow Cb\\
+A\rightarrow b\\
+A\rightarrow \lambda\end{cases}$$
 
 ---
