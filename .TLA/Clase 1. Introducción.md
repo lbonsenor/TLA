@@ -73,9 +73,8 @@
 >
 > #### EJ | Si $\Sigma=\lbrace a,b,c\rbrace$
 >
-> $`L = \lbrace \omega\in\Sigma^*|\#_a(\omega)=\#_b(\omega)`$
->
-> $L = \lbrace abc,cab,ccccab,abcba,\ldots\rbrace$
+> $$L = \lbrace \omega\in\Sigma^*|\#_a(\omega)=\#_b(\omega)\\
+L = \lbrace abc,cab,ccccab,abcba,\ldots\rbrace$$
 
 > [!TIP]
 >
@@ -139,7 +138,9 @@ $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demo
 >
 > #### EJ | $G=\langle N,\Sigma,S,P\rangle$
 >
-> $`\begin{cases} V=\lbrace S,A\rbrace \\ \Sigma=\lbrace a,b\rbrace  \\ P=\lbrace S\rightarrow aAb, A\rightarrow aAb\ |\ a\rbrace \end{cases}`$
+> $$\begin{cases} V=\lbrace S,A\rbrace \\
+\Sigma=\lbrace a,b\rbrace\\
+P=\lbrace S\rightarrow aAb, A\rightarrow aAb\ |\ a\rbrace \end{cases}$$
 >
 > Una secuencia de derivaciones **puede** ser $S\Rightarrow aAb\Rightarrow aaAbb\Rightarrow aaabb$
 
