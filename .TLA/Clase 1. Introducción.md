@@ -73,8 +73,9 @@
 >
 > #### EJ | Si $\Sigma=\lbrace a,b,c\rbrace$
 >
-> $$`L = \lbrace \omega\in\Sigma^*|\#_a(\omega)=\#_b(\omega)\\
-L = \lbrace abc,cab,ccccab,abcba,\ldots\rbrace`$$
+> $`L = \lbrace \omega\in\Sigma^*|\#_a(\omega)=\#_b(\omega)`$
+>
+> $L = \lbrace abc,cab,ccccab,abcba,\ldots\rbrace$
 
 > [!TIP]
 >
