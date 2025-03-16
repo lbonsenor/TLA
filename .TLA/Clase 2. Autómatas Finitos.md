@@ -39,7 +39,7 @@
 >
 > Se denota con un par $[q,\omega]$, donde $q\in Q\wedge\omega\in\Sigma^*$
 >
-> El simbolo $\mapsto$ indica el movimiento válido entre dos configuraciones, es decir
+> El símbolo $\mapsto$ indica el movimiento válido entre dos configuraciones, es decir
 >
 > $$[q,a\omega]\mapsto[p\omega]\Leftrightarrow\delta(q,a)=p$$
 
@@ -101,7 +101,7 @@
 >
 > ### Construcción Inductiva
 >
-> $\text{Base)}$ El conjunto de un solo momento $Q'=\lbrace q_0\rbrace$ es accecible ya que
+> $\text{Base)}$ El conjunto de un solo momento $Q'=\lbrace q_0\rbrace$ es accesible ya que
 >
 > $$\exists\lambda\in\Sigma^*\bigg|\hat\delta(q_0,\lambda)=q_0\in Q$$
 >
@@ -138,7 +138,7 @@
 >
 > $$pE_0q:\quad\forall\omega\in\Sigma^*\wedge|\omega|=0:\hat\delta(p,\lambda)\in F\Leftrightarrow(q,\lambda)\in F$$
 >
-> $$\text{Por definicion de }\hat\delta:\hat\delta(p,\lambda)=p\wedge\hat\delta(q,\lambda)=q$$
+> $$\text{Por definición de }\hat\delta:\hat\delta(p,\lambda)=p\wedge\hat\delta(q,\lambda)=q$$
 >
 > $$\text{Por lo tanto:}\qquad pE_0q\Leftrightarrow\bigg(p\in F\Leftrightarrow q\in F\bigg)$$
 >
@@ -162,7 +162,7 @@
 >
 > `Entrada:` $Q$
 >
-> `Salida:` Conjunto cociente de $Q$ por la relacion de indistiguibilidad $\frac QE$
+> `Salida:` Conjunto cociente de $Q$ por la relación de indistiguibilidad $\frac QE$
 >
 > 1. $\frac Q{E_0}=\lbrace F, Q-F\rbrace$
 > 2. Generar $\frac Q{E_{i+1}}$ a partir de $\frac Q{E_i}$ de la siguiente manera:

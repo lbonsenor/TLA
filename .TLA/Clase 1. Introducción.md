@@ -2,7 +2,7 @@
 >
 > ### Alfabeto $\Sigma$
 >
-> Conjunto no vacio finito de simbolos
+> Conjunto no vacío finito de símbolos
 
 > [!IMPORTANT]
 >
@@ -12,7 +12,7 @@
 
 > [!IMPORTANT]
 >
-> #### EJ | Alfabeto de letras minusculas
+> #### EJ | Alfabeto de letras minúsculas
 >
 > $\Sigma=\lbrace a,b,\ldots,z\rbrace$
 
@@ -31,11 +31,11 @@
 > Secuencia finita de símbolos seleccionados de algún alfabeto.
 >
 > - **Longitud de una cadena** $|\omega|$: cantidad de símbolos
-> - **Cadena vacia**: $\lambda$
+> - **Cadena vacía**: $\lambda$
 
 > [!TIP]
 >
-> ### Concatenacion de cadenas $x.y$
+> ### Concatenación de cadenas $x.y$
 >
 > #### Propiedades
 >
@@ -45,16 +45,16 @@
 
 > [!NOTE]
 >
-> ### Cadena: Definicion recursiva
+> ### Cadena: Definición recursiva
 >
 > - $\lambda$ es una cadena
-> - Si a es un simbolo $(a\in\Sigma)$ y $\omega$ es una cadena, entonces $a.\omega$ es una cadena
+> - Si a es un símbolo $(a\in\Sigma)$ y $\omega$ es una cadena, entonces $a.\omega$ es una cadena
 
 > [!TIP]
 >
 > ### Reversion de una cadena
 >
-> Definicion recursiva:
+> Definición recursiva:
 >
 > - $\lambda^r = \lambda$
 > - $(a\omega)^r=(\omega)^ra$
@@ -107,13 +107,13 @@ $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demo
 
 > [!IMPORTANT]
 >
-> #### EJ | Arbol
+> #### EJ | Árbol
 >
-> **Base:** Un nodo es un arbol
+> **Base:** Un nodo es un árbol
 >
 > **Paso inductivo**: Si $T_1. T_2, \ldots, T_k$ son árboles, se puede construir un nuevo árbol de la siguiente manera
 >
-> 1. Se comienza con un nuevo nodo $(N)$, que es la raíz del arbol
+> 1. Se comienza con un nuevo nodo $(N)$, que es la raíz del árbol
 > 2. Se añaden arcos desde el nodo $N$ hasta las raíces de cada uno de los árboles
 >
 > **Propiedad**: Si $T$ es un árbol y tiene $n$ nodos, entonces tiene $n-1$ arcos
@@ -122,7 +122,7 @@ $Y1,Y2,..Yk$, se dan por ciertas $P(Y1), P(Y2), …., P(Yk)$ y se usan para demo
 
 > [!NOTE]
 >
-> ### Grámaticas $\langle N,\Sigma,S,P\rangle$ o $\langle V,\Sigma,S,P\rangle$
+> ### Gramáticas $\langle N,\Sigma,S,P\rangle$ o $\langle V,\Sigma,S,P\rangle$
 >
 > Una **gramática** es un sistema matemático para definir un lenguaje
 >
@@ -151,7 +151,7 @@ P=\lbrace S\rightarrow aAb, A\rightarrow aAb\ |\ a\rbrace \end{cases}$$
 >
 > ### Formas Sentenciales $(V\cup\Sigma)^*$
 >
-> Dada una gramatica $G=\langle N,\Sigma,S,P\rangle$, las formas secuenciales son todas las secuencias de simbolos derivadas de $S$, usando las producciones de $G$
+> Dada una gramática $G=\langle N,\Sigma,S,P\rangle$, las formas secuenciales son todas las secuencias de símbolos derivadas de $S$, usando las producciones de $G$
 >
 > **Formas sentenciales que son palabras**: $\Sigma^*$
 
