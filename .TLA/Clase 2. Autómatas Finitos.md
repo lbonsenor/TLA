@@ -103,7 +103,7 @@
 >
 > $\text{Base)}$ El conjunto de un solo momento $Q'=\lbrace q_0\rbrace$ es accesible ya que
 >
-> $$\exists\lambda\in\Sigma^*\bigg|\hat\delta(q_0,\lambda)=q_0\in Q$$
+> $$\exists\lambda\in\Sigma^\ast\bigg|\hat\delta(q_0,\lambda)=q_0\in Q$$
 >
 > $\text{P.I)}$ Si $S\subseteq Q$ es un conjunto de estados accesibles $\forall a\in\Sigma\wedge q_i\in S$, $S'$ es de estados accesibles tal que
 >
